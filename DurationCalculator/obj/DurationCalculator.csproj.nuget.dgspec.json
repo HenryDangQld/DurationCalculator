@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/henrydang/Documents/DurationCalculator/DurationCalculator/DurationCalculator.csproj": {}
+    "/Users/henrydang/Downloads/DurationCalculator/DurationCalculator/DurationCalculator.csproj": {}
   },
   "projects": {
-    "/Users/henrydang/Documents/DurationCalculator/DurationCalculator/DurationCalculator.csproj": {
+    "/Users/henrydang/Downloads/DurationCalculator/DurationCalculator/DurationCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/henrydang/Documents/DurationCalculator/DurationCalculator/DurationCalculator.csproj",
+        "projectUniqueName": "/Users/henrydang/Downloads/DurationCalculator/DurationCalculator/DurationCalculator.csproj",
         "projectName": "DurationCalculator",
-        "projectPath": "/Users/henrydang/Documents/DurationCalculator/DurationCalculator/DurationCalculator.csproj",
+        "projectPath": "/Users/henrydang/Downloads/DurationCalculator/DurationCalculator/DurationCalculator.csproj",
         "packagesPath": "/Users/henrydang/.nuget/packages/",
-        "outputPath": "/Users/henrydang/Documents/DurationCalculator/DurationCalculator/obj/",
+        "outputPath": "/Users/henrydang/Downloads/DurationCalculator/DurationCalculator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/henrydang/.nuget/NuGet/NuGet.Config"

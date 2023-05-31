@@ -7,6 +7,12 @@ namespace DurationCalculator.Library
 {
     public partial class ExportCSV
     {
+        /// <summary>
+        /// Export to CSV file
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="genericList">List of rows</param>
+        /// <param name="fileName">Desired file name</param>
         public static void StartExport<T>(List<T> genericList, string fileName)
         {
             var sb = new StringBuilder();

@@ -11,15 +11,27 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DurationCalculator.Services
 {
+    /// <summary>
+    /// Calculating duration for 10000 records without loop
+    /// </summary>
     public class JobtimingsService
     {
         public DataContext _context;
 
+        /// <summary>
+        /// Initialize variable
+        /// </summary>
+        /// <param name="context"></param>
         public JobtimingsService(DataContext context)
         {
             _context = context;
         }
 
+        /// <summary>
+        /// Get all data from jobtiming table
+        /// </summary>
+        /// <param name="jobday">Day selection</param>
+        /// <returns></returns>
         public List<jobtiming> GetJobtimings(string jobday)
         {
             List<jobtiming> listRequest = new List<jobtiming>();
@@ -58,6 +70,10 @@ namespace DurationCalculator.Services
             return listRequest;
         }
 
+        /// <summary>
+        /// Calculating duration in this function
+        /// </summary>
+        /// <returns></returns>
         public List<jobtiming> CalculateDuration()
         {
             List<jobtiming> jobtimingOriginal = GetJobtimings("All");
@@ -116,12 +132,6 @@ namespace DurationCalculator.Services
                     }
                 }
 
-                //var entity = _context.jobtimings.FirstOrDefault(item => item.id == x.id);
-                //entity.duration = durationString;
-                //_context.Entry(entity).State = EntityState.Modified;
-                //_context.Update(entity);
-                //_context.SaveChanges();
-
                 return x;
             }).ToList();
 
@@ -132,6 +142,11 @@ namespace DurationCalculator.Services
             return newResult;
         }
 
+        /// <summary>
+        /// Convert hh:mm:ss to seconds
+        /// </summary>
+        /// <param name="time">Time stamp in hh:mm:ss</param>
+        /// <returns></returns>
         private double StringToSeconds(string time)
         {
             return TimeSpan.Parse(time).TotalSeconds;
@@ -147,6 +162,11 @@ namespace DurationCalculator.Services
                             t.Seconds);
         }
 
+        /// <summary>
+        /// Check if the time is in correct format
+        /// </summary>
+        /// <param name="input">Time stamp in hh:mm:ss</param>
+        /// <returns></returns>
         private bool IsValidTimeFormat(string input)
         {
             TimeSpan dummyOutput;

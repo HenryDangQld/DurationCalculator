@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gM9C69+G76HgT8U6hL2xjJxInMDQCln4GxPWxM7KVKVGh/5ffoIOityqn0aATYDZ1MxULyHKNsQd+y1R+icO3A==",
+  "dgSpecHash": "InnobgJCynM0PqWio0bWtLBOrESGvaXFmo0XpVQRpJTgbDcxc26/w/Fg69AxipWdfszQZ6/XYTC+M/PaYM3bYQ==",
   "success": true,
-  "projectFilePath": "/Users/henrydang/Documents/DurationCalculator/DurationCalculator/DurationCalculator.csproj",
+  "projectFilePath": "/Users/henrydang/Downloads/DurationCalculator/DurationCalculator/DurationCalculator.csproj",
   "expectedPackageFiles": [
     "/Users/henrydang/.nuget/packages/bouncycastle.netcore/1.8.3/bouncycastle.netcore.1.8.3.nupkg.sha512",
     "/Users/henrydang/.nuget/packages/google.protobuf/3.6.1/google.protobuf.3.6.1.nupkg.sha512",
