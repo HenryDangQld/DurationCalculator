@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationCalculator", "DurationCalculator\DurationCalculator.csproj", "{E434D41A-35B3-4C84-B421-C5B0E64337DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E434D41A-35B3-4C84-B421-C5B0E64337DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E434D41A-35B3-4C84-B421-C5B0E64337DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E434D41A-35B3-4C84-B421-C5B0E64337DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E434D41A-35B3-4C84-B421-C5B0E64337DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AD7162C-1FDB-4784-A748-92B967BD7B22}
+	EndGlobalSection
+EndGlobal
