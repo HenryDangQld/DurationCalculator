@@ -36,8 +36,6 @@ namespace DurationCalculator.Services
         {
             List<jobtiming> listRequest = new List<jobtiming>();
 
-            //listRequest = await _context.jobtimings.ToListAsync();
-
             if (jobday == "All")
             {
                 var result = _context.jobtimings.ToList();
@@ -145,13 +143,18 @@ namespace DurationCalculator.Services
         /// <summary>
         /// Convert hh:mm:ss to seconds
         /// </summary>
-        /// <param name="time">Time stamp in hh:mm:ss</param>
+        /// <param name="time">Timestamp in hh:mm:ss</param>
         /// <returns></returns>
         private double StringToSeconds(string time)
         {
             return TimeSpan.Parse(time).TotalSeconds;
         }
 
+        /// <summary>
+        /// Convert seconds to hh:mm:ss
+        /// </summary>
+        /// <param name="secs">Seconds in string type</param>
+        /// <returns></returns>
         private string SecondsToString(double secs)
         {
             TimeSpan t = TimeSpan.FromSeconds(secs);
@@ -165,7 +168,7 @@ namespace DurationCalculator.Services
         /// <summary>
         /// Check if the time is in correct format
         /// </summary>
-        /// <param name="input">Time stamp in hh:mm:ss</param>
+        /// <param name="input">Timestamp in hh:mm:ss</param>
         /// <returns></returns>
         private bool IsValidTimeFormat(string input)
         {
